@@ -1,209 +1,212 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>刘圣庭 | Shengting Liu</title>
+    <title>Shengting Liu</title>
     <meta
       name="description"
-      content="Bilingual academic homepage for Shengting Liu, featuring education, research projects, honors, and technical skills."
+      content="Academic homepage for Shengting Liu, featuring education, research projects, honors, and technical skills."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="academic-page">
       <header class="top-nav">
-        <a class="site-name" href="#about" data-zh="刘圣庭" data-en="Shengting Liu">刘圣庭</a>
+        <a class="site-name" href="#about">Shengting Liu</a>
         <nav aria-label="Sections">
-          <a href="#about" data-zh="关于我" data-en="About">关于我</a>
-          <a href="#news" data-zh="动态" data-en="News">动态</a>
-          <a href="#projects" data-zh="项目" data-en="Projects">项目</a>
-          <a href="#honors" data-zh="荣誉" data-en="Honors">荣誉</a>
-          <a href="#education" data-zh="教育" data-en="Education">教育</a>
-          <button id="lang-toggle" type="button">English</button>
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#projects">Projects</a>
+          <a href="#honors">Honors</a>
+          <a href="#education">Education</a>
         </nav>
       </header>
 
       <div class="layout">
         <aside class="profile-panel">
-          <div class="portrait" aria-hidden="true">LS</div>
-          <h1 data-zh="刘圣庭" data-en="Shengting Liu">刘圣庭</h1>
-          <p class="alt-name" data-zh="Shengting Liu" data-en="刘圣庭">Shengting Liu</p>
-          <p
-            class="role"
-            data-zh="中国科学技术大学 · 自动化本科生"
-            data-en="Undergraduate in Automation, USTC"
-          >
-            中国科学技术大学 · 自动化本科生
-          </p>
-          <p
-            class="focus"
-            data-zh="机器人学习 · 强化学习 · 大语言模型应用"
-            data-en="Robot Learning · Reinforcement Learning · LLM Applications"
-          >
-            机器人学习 · 强化学习 · 大语言模型应用
-          </p>
-          <a class="email" href="mailto:lst050608@mail.ustc.edu.cn">lst050608@mail.ustc.edu.cn</a>
-
-          <div class="metrics">
-            <div>
-              <span>GPA</span>
-              <strong>3.77 / 4.3</strong>
-            </div>
-            <div>
-              <span data-zh="加权均分" data-en="Weighted Average">加权均分</span>
-              <strong>88.79 / 100</strong>
-            </div>
-            <div>
-              <span data-zh="专业排名" data-en="Ranking">专业排名</span>
-              <strong>8 / 108</strong>
-            </div>
-            <div>
-              <span data-zh="英语" data-en="English">英语</span>
-              <strong>IELTS 7.0 · CET-6 633</strong>
-            </div>
+          <div class="portrait">
+            <img src="avatar.jpg" alt="Shengting Liu avatar" />
           </div>
+          <h1>Shengting Liu</h1>
+          <div class="profile-tags" aria-label="Research interests">
+            <span>Embodied AI</span>
+            <span>Reinforcement Learning</span>
+            <span>LLM Applications</span>
+          </div>
+          <ul class="profile-links" aria-label="Profile links">
+            <li>
+              <span class="profile-link profile-link-info">
+                <span class="profile-link-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 21s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12Z"></path>
+                    <circle cx="12" cy="9" r="2.4"></circle>
+                  </svg>
+                </span>
+                <span>Hefei</span>
+              </span>
+            </li>
+            <li>
+              <span class="profile-link profile-link-info">
+                <span class="profile-link-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 20h16"></path>
+                    <path d="M6 20V8l6-4 6 4v12"></path>
+                    <path d="M9 10h1.5M13.5 10H15M9 13h1.5M13.5 13H15M9 16h1.5M13.5 16H15"></path>
+                  </svg>
+                </span>
+                <span>USTC</span>
+              </span>
+            </li>
+            <li>
+              <a class="profile-link profile-link-link" href="mailto:lst050608@mail.ustc.edu.cn">
+                <span class="profile-link-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 6h16v12H4z"></path>
+                    <path d="m4 7 8 6 8-6"></path>
+                  </svg>
+                </span>
+                <span>Email</span>
+              </a>
+            </li>
+            <li>
+              <a class="profile-link profile-link-link" href="https://github.com/Midory568" target="_blank" rel="noreferrer">
+                <span class="profile-link-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2.8a9.2 9.2 0 0 0-2.9 17.9c.46.08.62-.2.62-.44v-1.6c-2.55.55-3.08-1.1-3.08-1.1-.42-1.06-1.02-1.34-1.02-1.34-.83-.57.06-.56.06-.56.92.06 1.4.94 1.4.94.82 1.4 2.14 1 2.66.76.08-.58.32-1 .58-1.22-2.03-.23-4.16-1.02-4.16-4.52 0-1 .36-1.82.94-2.46-.1-.23-.4-1.16.09-2.43 0 0 .77-.25 2.52.94a8.65 8.65 0 0 1 4.58 0c1.75-1.19 2.52-.94 2.52-.94.49 1.27.18 2.2.09 2.43.59.64.94 1.46.94 2.46 0 3.52-2.14 4.28-4.18 4.5.33.29.62.84.62 1.7v2.42c0 .25.16.53.63.44A9.2 9.2 0 0 0 12 2.8Z"></path>
+                  </svg>
+                </span>
+                <span>Github</span>
+              </a>
+            </li>
+          </ul>
+          <p class="role">
+            Undergraduate in Automation, University of Science and Technology of China
+          </p>
         </aside>
 
         <section class="content">
           <section class="section" id="about">
-            <h2 data-zh="关于我" data-en="About Me">关于我</h2>
-            <p
-              data-zh="我目前就读于中国科学技术大学自动化专业，关注机器人学习、强化学习与大语言模型在专业场景中的应用。我的项目经历覆盖 MuJoCo 仿真与实体机器人数据闭环、基于 RAG 的问答系统、Prompt-based 少样本强化学习等方向。"
-              data-en="I am an undergraduate student in Automation at the University of Science and Technology of China. My interests include robot learning, reinforcement learning, and practical LLM applications for specialized domains. My work spans MuJoCo simulation and physical robot workflows, RAG-based question answering, and prompt-based few-shot reinforcement learning."
-            >
-              我目前就读于中国科学技术大学自动化专业，关注机器人学习、强化学习与大语言模型在专业场景中的应用。我的项目经历覆盖 MuJoCo 仿真与实体机器人数据闭环、基于 RAG 的问答系统、Prompt-based 少样本强化学习等方向。
+            <h2>About Me</h2>
+            <p>
+              I am an undergraduate student majoring in Automation in University of
+              Science and Technology of China(USTC). My current research interests include robot
+              learning, reinforcement learning, and practical applications
+              for Physical AI. My work spans 
+              physical robot workflows, RAG-based question answering, and
+              prompt-based few-shot reinforcement learning.
             </p>
             <div class="skill-row">
-              <span data-zh="Python" data-en="Python">Python</span>
-              <span data-zh="C" data-en="C">C</span>
-              <span data-zh="C++" data-en="C++">C++</span>
-              <span data-zh="MuJoCo" data-en="MuJoCo">MuJoCo</span>
-              <span data-zh="RAG" data-en="RAG">RAG</span>
-              <span data-zh="Sentence-Transformer" data-en="Sentence-Transformer">Sentence-Transformer</span>
-              <span data-zh="强化学习" data-en="Reinforcement Learning">强化学习</span>
-              <span data-zh="机器人数据采集" data-en="Robotic Data Collection">机器人数据采集</span>
+              <span>Python</span>
+              <span>C</span>
+              <span>C++</span>
+              <span>MuJoCo</span>
+              <span>Reinforcement Learning</span>
+              <span>Robotic Data Collection</span>
+            </div>
+            <div class="metrics metrics-main" aria-label="Academic record">
+              <div>
+                <span>GPA</span>
+                <strong>3.77 / 4.3</strong>
+              </div>
+              <div>
+                <span>Weighted Average</span>
+                <strong>88.79 / 100</strong>
+              </div>
+              <div>
+                <span>Ranking</span>
+                <strong>8 / 108</strong>
+              </div>
             </div>
           </section>
 
           <section class="section" id="news">
-            <h2 data-zh="近期动态" data-en="News">近期动态</h2>
+            <h2>News</h2>
             <ul class="news-list">
               <li>
                 <time>2026</time>
-                <span
-                  data-zh="完成双语个人主页搭建，整理机器人学习、RAG 与强化学习项目经历。"
-                  data-en="Launched a bilingual academic homepage summarizing robot learning, RAG, and reinforcement learning projects."
-                >
-                  完成双语个人主页搭建，整理机器人学习、RAG 与强化学习项目经历。
-                </span>
+                <span>Continued work across robot learning, RAG, and reinforcement learning projects.</span>
               </li>
               <li>
                 <time>2025</time>
-                <span
-                  data-zh="作为核心成员参与 Prompt-Based Few-Shot Reinforcement Learning 项目，负责检索策略与强化学习训练。"
-                  data-en="Served as a core member of a prompt-based few-shot reinforcement learning project, focusing on retrieval strategy and RL training."
-                >
-                  作为核心成员参与 Prompt-Based Few-Shot Reinforcement Learning 项目，负责检索策略与强化学习训练。
-                </span>
+                <span>Served as a core member of a prompt-based few-shot reinforcement learning project, focusing on retrieval strategy and RL training, guided by Prof. Feng Zhao.</span>
               </li>
               <li>
                 <time>2025</time>
-                <span
-                  data-zh="基于 π0 模型完成方块抓取仿真与真机流程验证。"
-                  data-en="Completed simulation and physical-platform validation for cube grasping with the π0 model."
-                >
-                  基于 π0 模型完成方块抓取仿真与真机流程验证。
-                </span>
+                <span>Completed simulation and physical-platform validation for cube grasping with the &pi;0 model, guided by Prof. Weiwei Shang.</span>
               </li>
             </ul>
           </section>
 
           <section class="section" id="projects">
-            <h2 data-zh="科研与项目" data-en="Research & Projects">科研与项目</h2>
+            <h2>Research & Projects</h2>
             <div class="project-list">
               <article class="project-card">
-                <h3>Cube Grasping with π0</h3>
+                <h3>Cube Grasping with &pi;0</h3>
                 <p class="meta">Robot Learning / MuJoCo / Physical Robot</p>
-                <p
-                  data-zh="基于开源 π0 模型，在 MuJoCo 中完成遥操作数据采集、模型训练与推理流程，并在实体机器人平台进行验证。"
-                  data-en="Built a complete workflow with the open-source π0 model, including teleoperation data collection, training, and inference in MuJoCo, followed by validation on a physical robotic platform."
-                >
-                  基于开源 π0 模型，在 MuJoCo 中完成遥操作数据采集、模型训练与推理流程，并在实体机器人平台进行验证。
+                <p>
+                  Built a complete workflow with the open-source &pi;0 model,
+                  including teleoperation data collection, training, and
+                  inference in MuJoCo, followed by validation on a physical
+                  robotic platform.
                 </p>
               </article>
               <article class="project-card">
                 <h3>Prompt-Based Few-Shot Reinforcement Learning</h3>
                 <p class="meta">Reinforcement Learning / Retrieval / In-context Learning</p>
-                <p
-                  data-zh="设计 Prompt 规划代理与检索代理协作流程，在采样阶段动态提供任务相关 few-shot 示例，以提升采样效率与策略探索质量。"
-                  data-en="Designed a collaborative prompt-planning and retrieval-agent workflow that dynamically supplies task-relevant few-shot examples during sampling to improve exploration efficiency."
-                >
-                  设计 Prompt 规划代理与检索代理协作流程，在采样阶段动态提供任务相关 few-shot 示例，以提升采样效率与策略探索质量。
+                <p>
+                  Designed a collaborative prompt-planning and retrieval-agent
+                  workflow that dynamically supplies task-relevant few-shot
+                  examples during sampling to improve exploration efficiency.
                 </p>
               </article>
               <article class="project-card">
                 <h3>RAG-Based Question Answering System</h3>
                 <p class="meta">Large Language Models / Sentence-Transformer / Vector Database</p>
-                <p
-                  data-zh="将产品手册切分、编码并存入向量数据库，查询时检索相关段落并与问题共同输入大模型，生成基于可靠知识的回答。"
-                  data-en="Chunked product manuals, encoded passages, stored embeddings in a vector database, and retrieved relevant context to guide grounded LLM answers."
-                >
-                  将产品手册切分、编码并存入向量数据库，查询时检索相关段落并与问题共同输入大模型，生成基于可靠知识的回答。
+                <p>
+                  Chunked product manuals, encoded passages, stored embeddings
+                  in a vector database, and retrieved relevant context to guide
+                  grounded LLM answers.
                 </p>
               </article>
               <article class="project-card">
                 <h3>Neural Network Architectures on Iris</h3>
                 <p class="meta">Machine Learning / Regularization / Feature Engineering</p>
-                <p
-                  data-zh="比较初始化、损失函数、Dropout、Label Smoothing 与网络结构，并通过新增花萼面积特征提升训练速度和分类准确率。"
-                  data-en="Compared initialization methods, loss functions, Dropout, Label Smoothing, and model architectures, while adding sepal area as a derived feature."
-                >
-                  比较初始化、损失函数、Dropout、Label Smoothing 与网络结构，并通过新增花萼面积特征提升训练速度和分类准确率。
+                <p>
+                  Compared initialization methods, loss functions, Dropout,
+                  Label Smoothing, and model architectures, while adding sepal
+                  area as a derived feature.
                 </p>
               </article>
             </div>
           </section>
 
           <section class="section" id="honors">
-            <h2 data-zh="荣誉" data-en="Honors">荣誉</h2>
+            <h2>Honors</h2>
             <ul class="plain-list">
-              <li data-zh="优秀学生奖学金金奖" data-en="Outstanding Student Scholarship, Gold Award">优秀学生奖学金金奖</li>
-              <li data-zh="宋庆龄助学金" data-en="Soong Ching Ling Financial Aid Scholarship">宋庆龄助学金</li>
-              <li data-zh="优秀学生奖学金银奖" data-en="Outstanding Student Scholarship, Silver Award">优秀学生奖学金银奖</li>
-              <li data-zh="中国大学生数学竞赛安徽赛区二等奖" data-en="Second Prize, Anhui Division, Chinese Mathematics Competitions">中国大学生数学竞赛安徽赛区二等奖</li>
-              <li data-zh="全国大学生数学建模竞赛安徽赛区二等奖" data-en="Second Prize, Anhui Division, China Undergraduate Mathematical Contest in Modeling">全国大学生数学建模竞赛安徽赛区二等奖</li>
+              <li>Outstanding Student Scholarship, Gold Award</li>
+              <li>Soong Ching Ling Financial Aid Scholarship</li>
+              <li>Outstanding Student Scholarship, Silver Award</li>
+              <li>Second Prize, Anhui Division, Chinese Mathematics Competitions</li>
+              <li>Second Prize, Anhui Division, China Undergraduate Mathematical Contest in Modeling</li>
             </ul>
           </section>
 
           <section class="section" id="education">
-            <h2 data-zh="教育背景" data-en="Education">教育背景</h2>
-            <p
-              data-zh="中国科学技术大学，自动化，本科。核心课程包括数学分析 B2、数据结构与算法、计算机组成与嵌入式系统、随机过程、人工智能导论、深度学习实践、机器学习。"
-              data-en="University of Science and Technology of China, B.Eng. in Automation. Selected coursework includes Mathematical Analysis B2, Data Structures and Algorithms, Computer Organization and Embedded Systems, Stochastic Processes, Introduction to AI, Deep Learning Practice, and Machine Learning."
-            >
-              中国科学技术大学，自动化，本科。核心课程包括数学分析 B2、数据结构与算法、计算机组成与嵌入式系统、随机过程、人工智能导论、深度学习实践、机器学习。
-            </p>
+            <h2>Education</h2>
+            <ul class="timeline-list">
+              <li>
+                <time>2023-2027</time>
+                <span>University of Science and Technology of China, Bachelor</span>
+              </li>
+              <li>
+                <time>2027-future</time>
+                <span>University of Science and Technology of China, Master</span>
+              </li>
+            </ul>
           </section>
         </section>
       </div>
     </main>
-    <script>
-      const button = document.getElementById("lang-toggle");
-      let lang = "zh";
-
-      function applyLanguage(nextLang) {
-        lang = nextLang;
-        document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
-        document.querySelectorAll("[data-zh][data-en]").forEach((node) => {
-          node.textContent = node.dataset[lang];
-        });
-        button.textContent = lang === "zh" ? "English" : "中文";
-      }
-
-      button.addEventListener("click", () => {
-        applyLanguage(lang === "zh" ? "en" : "zh");
-      });
-    </script>
   </body>
 </html>
