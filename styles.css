@@ -430,6 +430,11 @@ h3 {
   margin-bottom: 28px;
 }
 
+.visit-intro {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+
 .anime-kicker {
   margin-bottom: 7px;
   color: var(--blue-dark);
@@ -508,6 +513,183 @@ h3 {
   font-size: 0.82rem;
 }
 
+.city-gallery {
+  display: grid;
+  gap: 22px;
+}
+
+.city-card {
+  position: relative;
+  display: block;
+  min-height: 250px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #d8d8d8;
+  color: inherit;
+  box-shadow: 0 12px 28px rgba(24, 32, 29, 0.1);
+}
+
+.city-card::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10, 18, 24, 0.7), rgba(10, 18, 24, 0.08) 68%);
+  content: "";
+}
+
+.city-card img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+.city-card:hover img {
+  transform: scale(1.02);
+}
+
+.city-card:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.city-card:focus-visible {
+  outline: 3px solid rgba(26, 115, 183, 0.45);
+  outline-offset: 3px;
+}
+
+.city-card-label {
+  position: absolute;
+  z-index: 1;
+  left: 28px;
+  bottom: 28px;
+  color: #ffffff;
+}
+
+.city-card-label h3 {
+  margin-bottom: 4px;
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.city-card-label span {
+  font-size: 0.88rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.city-detail {
+  display: grid;
+  gap: 26px;
+}
+
+.city-detail-back {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 7px;
+  color: var(--blue-dark);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.city-detail-hero {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #d8d8d8;
+  box-shadow: 0 14px 32px rgba(24, 32, 29, 0.12);
+}
+
+.city-detail-hero::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(10, 18, 24, 0.74), transparent 64%);
+  content: "";
+}
+
+.city-detail-hero img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.city-detail-title {
+  position: absolute;
+  z-index: 1;
+  left: 30px;
+  bottom: 28px;
+  color: #ffffff;
+}
+
+.city-detail-title h2 {
+  margin-bottom: 4px;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.city-detail-title p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.city-detail-lead {
+  margin: 0;
+  color: #303134;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.city-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(220px, 0.75fr);
+  gap: 24px;
+}
+
+.city-detail-section {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.78);
+}
+
+.city-detail-section h3 {
+  margin-bottom: 14px;
+}
+
+.city-detail-section p:last-child {
+  margin-bottom: 0;
+}
+
+.city-note-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.city-note-list li {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 12px;
+  line-height: 1.55;
+}
+
+.city-note-list strong {
+  color: var(--blue-dark);
+}
+
 @media (max-width: 850px) {
   .top-nav {
     align-items: flex-start;
@@ -546,6 +728,16 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .city-card,
+  .city-card img {
+    min-height: 220px;
+    height: 220px;
+  }
+
+  .city-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
   .metrics-main {
     grid-template-columns: 1fr;
   }
@@ -574,4 +766,40 @@ h3 {
     grid-template-columns: 1fr;
     gap: 2px;
   }
+
+  .city-card,
+  .city-card img {
+    min-height: 190px;
+    height: 190px;
+  }
+
+  .city-card-label {
+    left: 20px;
+    bottom: 22px;
+  }
+
+  .city-card-label h3 {
+    font-size: 1.6rem;
+  }
+
+  .city-detail-hero,
+  .city-detail-hero img {
+    min-height: 260px;
+    height: 260px;
+  }
+
+  .city-detail-title {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .city-detail-title h2 {
+    font-size: 1.9rem;
+  }
+
+  .city-note-list li {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
 }
