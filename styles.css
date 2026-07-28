@@ -104,6 +104,7 @@ button {
   position: sticky;
   top: 86px;
   align-self: start;
+  height: 608px;
   text-align: center;
 }
 
@@ -528,6 +529,7 @@ h3 {
 
   .profile-panel {
     position: static;
+    height: auto;
   }
 
   .portrait {
