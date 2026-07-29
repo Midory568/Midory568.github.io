@@ -586,6 +586,18 @@ h3 {
   gap: 26px;
 }
 
+.lang-zh {
+  display: none;
+}
+
+body.city-language-zh .lang-en {
+  display: none;
+}
+
+body.city-language-zh .lang-zh {
+  display: revert;
+}
+
 .city-detail-back {
   display: inline-flex;
   width: fit-content;
@@ -669,6 +681,32 @@ h3 {
 
 .city-detail-section p:last-child {
   margin-bottom: 0;
+}
+
+.city-detail-feature {
+  grid-column: 1 / -1;
+  background:
+    linear-gradient(145deg, rgba(13, 107, 99, 0.1), rgba(184, 122, 34, 0.09)),
+    rgba(255, 253, 248, 0.88);
+}
+
+.city-detail-feature .anime-kicker {
+  margin-bottom: 7px;
+}
+
+.city-detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.city-detail-tags span {
+  padding: 6px 10px;
+  border: 1px solid rgba(13, 107, 99, 0.2);
+  border-radius: 4px;
+  color: #0c4c47;
+  font-size: 0.84rem;
 }
 
 .city-note-list {
