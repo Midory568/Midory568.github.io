@@ -489,9 +489,9 @@ h3 {
 }
 
 .character-panel-art-hina img {
-  object-fit: cover;
-  object-position: 35% 39%;
-  transform: scale(2.2);
+  object-fit: contain;
+  object-position: center;
+  transform: none;
 }
 
 .character-panel-art-akane {
@@ -499,8 +499,9 @@ h3 {
 }
 
 .character-panel-art-akane img {
-  object-position: 23% 74%;
-  transform: scale(1.48);
+  object-fit: contain;
+  object-position: center;
+  transform: none;
 }
 
 .character-panel-art img {
