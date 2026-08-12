@@ -430,11 +430,15 @@ h3 {
   margin-bottom: 28px;
 }
 
-.rikka-profile {
+.character-spotlight {
+  position: relative;
+  margin-bottom: 38px;
+}
+
+.character-panel {
   display: grid;
   grid-template-columns: minmax(185px, 0.62fr) minmax(0, 1.38fr);
   gap: 28px;
-  margin-bottom: 38px;
   padding: 28px;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -444,54 +448,82 @@ h3 {
   box-shadow: 0 12px 28px rgba(24, 32, 29, 0.08);
 }
 
-.rikka-profile-art {
+.character-panel[hidden] {
+  display: none;
+}
+
+.character-panel-art {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
   min-height: 390px;
   overflow: hidden;
   border-radius: 7px;
-  background: linear-gradient(165deg, #d8deed, #f6f0e4);
+  background: #10132b;
 }
 
-.rikka-profile-art img {
+.character-panel-art img {
   display: block;
   width: 100%;
-  max-width: 305px;
+  max-width: none;
   height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
+  object-fit: cover;
+  object-position: center;
 }
 
-.rikka-profile-copy h2 {
+.character-panel-art-inori {
+  background: linear-gradient(155deg, #251c31, #84545d 55%, #e0b8bf);
+}
+
+.character-panel-art-erii {
+  background: #251822;
+}
+
+.character-panel-art-hina {
+  background: linear-gradient(160deg, #d7e7ee, #f2d9ad 60%, #bbd3e0);
+}
+
+.character-panel-art-hina img {
+  object-fit: contain;
+}
+
+.character-panel-art-takarada {
+  background: linear-gradient(160deg, #d5e4eb, #f3ece2);
+}
+
+.character-panel-art-takarada img {
+  object-fit: cover;
+}
+
+.character-panel-copy h2 {
   margin-bottom: 3px;
   color: var(--blue-dark);
 }
 
-.rikka-profile-copy > p {
+.character-panel-copy > p {
   color: #303134;
   line-height: 1.7;
 }
 
-.rikka-profile-japanese {
+.character-panel-japanese {
   margin-bottom: 18px;
   color: #8b5d20 !important;
   font-size: 0.92rem;
 }
 
-.rikka-profile-facts {
+.character-panel-facts {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px 20px;
   margin: 22px 0;
 }
 
-.rikka-profile-facts div {
+.character-panel-facts div {
   padding-top: 9px;
   border-top: 1px solid rgba(50, 73, 109, 0.18);
 }
 
-.rikka-profile-facts dt {
+.character-panel-facts dt {
   color: #687176;
   font-size: 0.76rem;
   font-weight: 700;
@@ -499,20 +531,70 @@ h3 {
   text-transform: uppercase;
 }
 
-.rikka-profile-facts dd {
+.character-panel-facts dd {
   margin: 3px 0 0;
   color: #26343e;
   font-weight: 600;
 }
 
-.rikka-profile-link {
+.character-panel-link {
   color: var(--blue-dark);
   font-weight: 700;
   text-decoration: none;
 }
 
-.rikka-profile-link:hover {
+.character-panel-link:hover {
   text-decoration: underline;
+}
+
+.character-switch {
+  position: absolute;
+  z-index: 2;
+  top: 18px;
+  right: 18px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid rgba(38, 52, 62, 0.2);
+  border-radius: 50%;
+  color: #274e70;
+  background: rgba(255, 253, 248, 0.86);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(24, 32, 29, 0.1);
+  transition: transform 170ms ease, background 170ms ease;
+}
+
+.character-switch:hover {
+  transform: rotate(35deg);
+  background: #ffffff;
+}
+
+.character-switch:focus-visible {
+  outline: 3px solid rgba(13, 107, 99, 0.45);
+  outline-offset: 3px;
+}
+
+.character-switch svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.character-progress {
+  position: absolute;
+  z-index: 2;
+  top: 31px;
+  right: 74px;
+  margin: 0;
+  color: #687176;
+  font-size: 0.78rem;
+  font-weight: 700;
 }
 
 .anime-kicker {
@@ -870,7 +952,7 @@ body.city-language-zh .lang-zh {
     max-width: none;
   }
 
-  .rikka-profile {
+  .character-panel {
     grid-template-columns: minmax(155px, 0.55fr) minmax(0, 1.45fr);
     gap: 22px;
   }
@@ -924,22 +1006,32 @@ body.city-language-zh .lang-zh {
     height: 190px;
   }
 
-  .rikka-profile {
+  .character-panel {
     grid-template-columns: 1fr;
     gap: 18px;
     padding: 20px;
   }
 
-  .rikka-profile-art {
+  .character-panel-art {
     min-height: 310px;
   }
 
-  .rikka-profile-art img {
-    max-width: 230px;
+  .character-panel-art img {
+    max-width: none;
   }
 
-  .rikka-profile-facts {
+  .character-panel-facts {
     gap: 10px 14px;
+  }
+
+  .character-switch {
+    top: 12px;
+    right: 12px;
+  }
+
+  .character-progress {
+    top: 25px;
+    right: 66px;
   }
 
   .anime-work-card {
