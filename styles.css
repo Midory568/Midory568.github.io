@@ -490,8 +490,8 @@ h3 {
 
 .character-panel-art-hina img {
   object-fit: cover;
-  object-position: 70% 24%;
-  transform: scale(2.05);
+  object-position: 35% 39%;
+  transform: scale(2.2);
 }
 
 .character-panel-art-akane {
@@ -536,25 +536,38 @@ h3 {
 .character-switch {
   position: absolute;
   z-index: 2;
-  top: 18px;
-  right: 18px;
+  top: 16px;
+  right: 16px;
   display: grid;
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   padding: 0;
   place-items: center;
-  border: 1px solid rgba(38, 52, 62, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 50%;
-  color: #274e70;
-  background: rgba(255, 253, 248, 0.86);
+  color: #ffffff;
+  background: linear-gradient(135deg, #176c81, #334b90);
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(24, 32, 29, 0.1);
-  transition: transform 170ms ease, background 170ms ease;
+  box-shadow: 0 7px 18px rgba(28, 57, 91, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.38);
+  transition: transform 190ms ease, box-shadow 190ms ease, filter 190ms ease;
+}
+
+.character-switch::before {
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: inherit;
+  content: "";
 }
 
 .character-switch:hover {
-  transform: rotate(35deg);
-  background: #ffffff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 11px 23px rgba(28, 57, 91, 0.31), inset 0 1px 0 rgba(255, 255, 255, 0.46);
+  filter: saturate(1.15);
+}
+
+.character-switch:active {
+  transform: translateY(0) scale(0.96);
 }
 
 .character-switch:focus-visible {
@@ -563,6 +576,8 @@ h3 {
 }
 
 .character-switch svg {
+  position: relative;
+  z-index: 1;
   width: 22px;
   height: 22px;
   fill: none;
@@ -576,7 +591,7 @@ h3 {
   position: absolute;
   z-index: 2;
   top: 31px;
-  right: 74px;
+  right: 80px;
   margin: 0;
   color: #687176;
   font-size: 0.78rem;
@@ -1009,11 +1024,13 @@ body.city-language-zh .lang-zh {
   .character-switch {
     top: 12px;
     right: 12px;
+    width: 44px;
+    height: 44px;
   }
 
   .character-progress {
     top: 25px;
-    right: 66px;
+    right: 72px;
   }
 
   .anime-work-card {
