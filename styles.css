@@ -487,11 +487,11 @@ h3 {
   object-fit: contain;
 }
 
-.character-panel-art-takarada {
-  background: linear-gradient(160deg, #d5e4eb, #f3ece2);
+.character-panel-art-akane {
+  background: linear-gradient(160deg, #e4d4ea, #bfa2c7 58%, #64516b);
 }
 
-.character-panel-art-takarada img {
+.character-panel-art-akane img {
   object-fit: cover;
 }
 
