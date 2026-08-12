@@ -430,9 +430,89 @@ h3 {
   margin-bottom: 28px;
 }
 
-.visit-intro {
-  margin-bottom: 24px;
-  padding-bottom: 24px;
+.rikka-profile {
+  display: grid;
+  grid-template-columns: minmax(185px, 0.62fr) minmax(0, 1.38fr);
+  gap: 28px;
+  margin-bottom: 38px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, rgba(79, 102, 153, 0.12), rgba(255, 253, 248, 0.78) 48%, rgba(184, 122, 34, 0.1)),
+    rgba(255, 253, 248, 0.9);
+  box-shadow: 0 12px 28px rgba(24, 32, 29, 0.08);
+}
+
+.rikka-profile-art {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  min-height: 390px;
+  overflow: hidden;
+  border-radius: 7px;
+  background: linear-gradient(165deg, #d8deed, #f6f0e4);
+}
+
+.rikka-profile-art img {
+  display: block;
+  width: 100%;
+  max-width: 305px;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.rikka-profile-copy h2 {
+  margin-bottom: 3px;
+  color: var(--blue-dark);
+}
+
+.rikka-profile-copy > p {
+  color: #303134;
+  line-height: 1.7;
+}
+
+.rikka-profile-japanese {
+  margin-bottom: 18px;
+  color: #8b5d20 !important;
+  font-size: 0.92rem;
+}
+
+.rikka-profile-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 20px;
+  margin: 22px 0;
+}
+
+.rikka-profile-facts div {
+  padding-top: 9px;
+  border-top: 1px solid rgba(50, 73, 109, 0.18);
+}
+
+.rikka-profile-facts dt {
+  color: #687176;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.rikka-profile-facts dd {
+  margin: 3px 0 0;
+  color: #26343e;
+  font-weight: 600;
+}
+
+.rikka-profile-link {
+  color: var(--blue-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.rikka-profile-link:hover {
+  text-decoration: underline;
 }
 
 .anime-kicker {
@@ -790,6 +870,11 @@ body.city-language-zh .lang-zh {
     max-width: none;
   }
 
+  .rikka-profile {
+    grid-template-columns: minmax(155px, 0.55fr) minmax(0, 1.45fr);
+    gap: 22px;
+  }
+
   .anime-work-grid {
     grid-template-columns: 1fr;
   }
@@ -837,6 +922,24 @@ body.city-language-zh .lang-zh {
   .city-card img {
     min-height: 190px;
     height: 190px;
+  }
+
+  .rikka-profile {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .rikka-profile-art {
+    min-height: 310px;
+  }
+
+  .rikka-profile-art img {
+    max-width: 230px;
+  }
+
+  .rikka-profile-facts {
+    gap: 10px 14px;
   }
 
   .anime-work-card {
