@@ -640,7 +640,7 @@ h3 {
 .anime-work-card {
   display: grid;
   grid-template-columns: minmax(132px, 0.7fr) minmax(0, 1.3fr);
-  min-height: 310px;
+  height: 310px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -662,6 +662,9 @@ h3 {
 }
 
 .anime-work-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
   padding: 20px 18px;
 }
 
@@ -673,6 +676,10 @@ h3 {
 }
 
 .anime-work-copy > p:last-child {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
   margin-bottom: 0;
   color: #303134;
   font-size: 0.92rem;
@@ -1025,7 +1032,7 @@ body.city-language-zh .lang-zh {
 
   .anime-work-card {
     grid-template-columns: 118px minmax(0, 1fr);
-    min-height: 280px;
+    height: 280px;
   }
 
   .anime-work-card img {
