@@ -93,10 +93,10 @@ button {
 
 .layout {
   display: grid;
-  /* Keep the reading column centred by balancing the profile column with a right gutter. */
+  /* Use the full viewport so the profile is centred in the visible left third. */
   grid-template-columns: minmax(180px, 1fr) minmax(0, 790px) minmax(180px, 1fr);
   gap: 34px;
-  width: min(1320px, calc(100% - 32px));
+  width: calc(100% - 32px);
   margin: 0 auto;
   padding: 40px 0 70px;
 }
