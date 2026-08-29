@@ -93,7 +93,8 @@ button {
 
 .layout {
   display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
+  /* Keep the reading column centred by balancing the profile column with a right gutter. */
+  grid-template-columns: minmax(180px, 1fr) minmax(0, 790px) minmax(180px, 1fr);
   gap: 34px;
   width: min(1320px, calc(100% - 32px));
   margin: 0 auto;
@@ -104,7 +105,14 @@ button {
   position: sticky;
   top: 86px;
   align-self: start;
-  height: 608px;
+  display: flex;
+  width: min(210px, 100%);
+  height: calc(100vh - 126px);
+  min-height: 490px;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -305,6 +313,7 @@ h1 {
 }
 
 .content {
+  grid-column: 2;
   max-width: 790px;
 }
 
@@ -937,7 +946,10 @@ body.city-language-zh .lang-zh {
 
   .profile-panel {
     position: static;
+    display: block;
+    width: auto;
     height: auto;
+    min-height: 0;
   }
 
   .portrait {
@@ -947,6 +959,7 @@ body.city-language-zh .lang-zh {
   }
 
   .content {
+    grid-column: auto;
     max-width: none;
   }
 
