@@ -29,6 +29,10 @@ body {
   font-size: 16px;
 }
 
+img {
+  object-fit: cover;
+}
+
 a {
   color: var(--blue);
   text-decoration: none;
@@ -499,6 +503,9 @@ h3 {
   color: var(--accent);
   text-decoration: underline;
 }
+.asuka-profile-image-link .character-panel-art img {
+  object-fit: cover;
+}
 .character-panel-art-asuka {
   background: linear-gradient(145deg, #7c1c26, #e66f61 58%, #f3c79d);
 }
@@ -656,11 +663,6 @@ h3 {
   display: grid;
   grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.25fr);
   gap: 30px;
-  padding: 28px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: linear-gradient(135deg, rgba(124, 28, 38, 0.11), rgba(255, 253, 248, 0.82) 52%, rgba(243, 199, 157, 0.18));
-  box-shadow: 0 12px 28px rgba(24, 32, 29, 0.08);
 }
 
 .asuka-detail-art {
@@ -1044,7 +1046,6 @@ body.city-language-zh .lang-zh {
 
   .asuka-detail-hero {
     gap: 20px;
-    padding: 20px;
   }
 
   .asuka-detail-art {
