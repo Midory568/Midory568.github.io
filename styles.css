@@ -481,7 +481,7 @@ h3 {
 }
 
 .character-panel-art-asuka img {
-  object-fit: contain;
+  object-fit: cover;
   transform: none;
 }
 .character-panel-art img {
