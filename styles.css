@@ -506,7 +506,8 @@ h3 {
 .asuka-profile-image-link .character-panel-art img {
   object-fit: cover;
 }
-.asuka-profile-image-link .character-panel-art-asuka img {
+.asuka-profile-image-link .character-panel-art-asuka img,
+.asuka-detail-art img {
   transform: scale(1.6);
   transform-origin: center 52%;
 }
