@@ -452,7 +452,7 @@ h3 {
 
 .character-panel {
   display: grid;
-  grid-template-columns: minmax(185px, 0.62fr) minmax(0, 1.38fr);
+  grid-template-columns: 1fr;
   gap: 28px;
   padding: 28px;
   border: 1px solid var(--line);
@@ -467,7 +467,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 390px;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 7px;
   background: #10132b;
@@ -508,8 +509,8 @@ h3 {
 }
 .asuka-profile-image-link .character-panel-art-asuka img,
 .asuka-detail-art img {
-  transform: scale(1.6);
-  transform-origin: center 52%;
+  object-position: center 52%;
+  transform: none;
 }
 .character-panel-art-asuka {
   background: linear-gradient(145deg, #7c1c26, #e66f61 58%, #f3c79d);
@@ -666,12 +667,13 @@ h3 {
 
 .asuka-detail-hero {
   display: grid;
-  grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.25fr);
+  grid-template-columns: 1fr;
   gap: 30px;
 }
 
 .asuka-detail-art {
-  min-height: 400px;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 7px;
   background: #9a2932;
@@ -973,12 +975,12 @@ body.city-language-zh .lang-zh {
   }
 
   .character-panel {
-    grid-template-columns: minmax(155px, 0.55fr) minmax(0, 1.45fr);
+    grid-template-columns: 1fr;
     gap: 22px;
   }
 
   .asuka-detail-hero {
-    grid-template-columns: minmax(180px, 0.65fr) minmax(0, 1.35fr);
+    grid-template-columns: 1fr;
     gap: 22px;
   }
   .anime-work-grid {
@@ -1037,7 +1039,8 @@ body.city-language-zh .lang-zh {
   }
 
   .character-panel-art {
-    min-height: 310px;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
   }
 
   .character-panel-art img {
@@ -1054,7 +1057,8 @@ body.city-language-zh .lang-zh {
   }
 
   .asuka-detail-art {
-    min-height: 310px;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
   }
   .anime-work-card {
     grid-template-columns: 118px minmax(0, 1fr);
