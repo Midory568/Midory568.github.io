@@ -506,6 +506,10 @@ h3 {
 .asuka-profile-image-link .character-panel-art img {
   object-fit: cover;
 }
+.asuka-profile-image-link .character-panel-art-asuka img {
+  transform: scale(1.6);
+  transform-origin: center 52%;
+}
 .character-panel-art-asuka {
   background: linear-gradient(145deg, #7c1c26, #e66f61 58%, #f3c79d);
 }
