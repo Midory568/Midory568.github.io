@@ -1,0 +1,36 @@
+/* Hong Kong travel journal: scoped to keep the shared site layout intact. */
+.hk-page .layout > * { min-width: 0; max-width: 100%; }
+@media (max-width: 850px) {
+  .hk-page .layout { grid-template-columns: minmax(0, 1fr); }
+  .hk-page .profile-panel { width: 100%; }
+}
+.hk-journal { --hk-red: #973e35; min-width: 0; }
+.hk-heading { margin: 36px 0 28px; }
+.hk-eyebrow { color: var(--hk-red); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; line-height: 1.6; }
+.hk-heading h2 { border: 0; padding: 0; margin-bottom: 8px; font-size: clamp(2.8rem, 6vw, 4.8rem); font-weight: 600; letter-spacing: -.05em; line-height: 1.05; }
+.hk-deck { margin-bottom: 14px; color: var(--hk-red); font-size: 1.3rem; }
+.hk-intro, .hk-chapter > p:not(.hk-eyebrow) { max-width: 660px; line-height: 1.8; color: #4d5355; }
+.hk-photo { margin: 28px 0 36px; }
+.hk-photo > a { display: block; overflow: hidden; border-radius: 6px; background: #e9e3d9; }
+.hk-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4096 / 1844; object-fit: cover; }
+.hk-photo a:focus-visible, .hk-chapters a:focus-visible { outline: 3px solid var(--hk-red); outline-offset: 4px; }
+.hk-photo figcaption { padding-top: 14px; }
+.hk-photo figcaption h3 { color: var(--foreground); font-size: 1rem; font-weight: 600; margin-bottom: 6px; }
+.hk-photo figcaption p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.65; }
+.hk-exhibit-story p + p { margin-top: 14px; }
+.hk-exhibit-story blockquote { margin: 24px 0; padding: 8px 0 8px 20px; border-left: 3px solid var(--hk-red); color: var(--hk-red); font-size: 1.15rem; line-height: 1.6; }
+.hk-exhibit-story cite { display: block; margin-top: 10px; color: var(--muted); font-size: .8rem; font-style: normal; }
+.hk-photo .hk-exhibit-source { margin-top: 20px; font-size: .78rem; }
+.hk-cover { margin-top: 0; }
+.hk-cover figcaption { display: flex; justify-content: space-between; gap: 16px; color: var(--muted); font-size: .75rem; letter-spacing: .06em; }
+.hk-chapters { display: flex; flex-wrap: wrap; gap: 12px 22px; padding: 20px 0; border-block: 1px solid var(--line); }
+.hk-chapters a { color: var(--hk-red); font-size: .85rem; line-height: 1.6; }
+.hk-chapter { margin-top: 48px; scroll-margin-top: 125px; }
+.hk-chapter h2 { border: 0; padding: 0; font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 14px; }
+.hk-footer { margin-top: 48px; padding: 22px 0 10px; border-top: 1px solid var(--line); }
+.hk-footer p { font-size: .8rem; color: var(--muted); line-height: 1.7; }
+@media (max-width: 520px) {
+  .hk-heading { margin-top: 28px; }
+  .hk-chapters { flex-direction: column; gap: 12px; }
+  .hk-chapter { margin-top: 36px; }
+}

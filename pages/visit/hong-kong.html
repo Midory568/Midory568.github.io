@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hong Kong | Visit</title>
-    <meta name="description" content="A personal city note about Hong Kong." />
+    <meta name="description" content="Hong Kong travel journal, August 23–29: harbour nights, university visits, and everyday discoveries in six photographs." />
     <link rel="stylesheet" href="../../styles.css?v=2026083007" />
+    <link rel="stylesheet" href="hong-kong.css?v=20260905b" />
   </head>
-  <body>
+  <body class="hk-page">
     <main class="academic-page">
       <header class="top-nav">
         <a class="site-name" href="../../index.html#about">Shengting Liu</a>
@@ -15,7 +16,6 @@
           <a href="../anime.html">Anime</a>
           <a href="../visit.html" aria-current="page">Visit</a>
           <a href="../../index.html#about">Profile</a>
-          <button class="language-toggle" type="button" aria-label="Switch language"><span class="lang-en">中文</span><span class="lang-zh">English</span></button>
         </nav>
       </header>
       <div class="layout">
@@ -34,52 +34,84 @@
           </ul>
         </aside>
         <section class="content">
-          <article class="city-detail">
-            <a class="city-detail-back" href="../visit.html"><span class="lang-en">← Back</span><span class="lang-zh">← 返回</span></a>
-            <div class="city-detail-hero">
-              <img src="../../images/visit-hong-kong.avif" alt="Hong Kong skyline across Victoria Harbour" />
-              <div class="city-detail-title">
-                <h2><span class="lang-en">Hong Kong</span><span class="lang-zh">香港</span></h2>
-                <p><span class="lang-en">香港</span><span class="lang-zh">Hong Kong</span></p>
-              </div>
-            </div>
-            <p class="city-detail-lead lang-en">A city of vertical streets, harbour light, and fast-moving neighbourhoods. Hong Kong feels especially vivid when the skyline and the water appear in the same frame.</p>
-            <p class="city-detail-lead lang-zh">这是一座由立体街道、海港灯光和快速变换的街区组成的城市。当城市天际线与维多利亚港同时进入视野时，香港显得格外鲜明。</p>
-            <div class="city-detail-grid">
-              <section class="city-detail-section">
-                <h3><span class="lang-en">City Impression</span><span class="lang-zh">城市印象</span></h3>
-                <p class="lang-en">Morning ferries, compact streets, hillside buildings, and neon reflections give the city a rhythm that changes from block to block.</p>
-                <p class="lang-zh">清晨的渡轮、紧凑的街道、依山而建的楼宇和霓虹倒影，让城市几乎每经过一个街区就会改变一次节奏。</p>
-              </section>
-              <section class="city-detail-section">
-                <h3><span class="lang-en">One-day Note</span><span class="lang-zh">一日随记</span></h3>
-                <ul class="city-note-list">
-                  <li><strong><span class="lang-en">Morning</span><span class="lang-zh">上午</span></strong><span class="lang-en">Walk along Victoria Harbour.</span><span class="lang-zh">沿维多利亚港散步。</span></li>
-                  <li><strong><span class="lang-en">Afternoon</span><span class="lang-zh">下午</span></strong><span class="lang-en">Explore Central and the hillside streets.</span><span class="lang-zh">探索中环和半山街道。</span></li>
-                  <li><strong><span class="lang-en">Evening</span><span class="lang-zh">晚上</span></strong><span class="lang-en">Watch the skyline lights from the waterfront.</span><span class="lang-zh">在海滨欣赏天际线灯光。</span></li>
-                </ul>
-              </section>
-            </div>
+          <article class="hk-journal">
+            <a class="city-detail-back" href="../visit.html">← All journeys</a>
+            <header class="hk-heading">
+              <p class="hk-eyebrow">Travel journal · August 23–29</p>
+              <h2>Hong Kong</h2>
+              <p class="hk-deck">Seven days, six frames.</p>
+              <p class="hk-intro">A week in Hong Kong, collected in photographs: a waterfront after dark, two university stops, and small discoveries between the city's landmarks.</p>
+            </header>
+            <figure class="hk-photo hk-cover">
+              <a href="../../images/hongkong/Victoria%27s%20bay.jpg" target="_blank" rel="noopener" aria-label="Open full harbour photograph">
+                <img src="../../images/hongkong/web/harbour.webp" alt="The Hong Kong Observation Wheel glowing red beside the waterfront at night" width="1600" height="720" fetchpriority="high" />
+              </a>
+              <figcaption><span>01 / Harbour after dark</span><span>23–29 AUG</span></figcaption>
+            </figure>
+            <nav class="hk-chapters" aria-label="Journal chapters">
+              <a href="#harbour">01 · Harbour nights</a>
+              <a href="#campuses">02 · Campus visits</a>
+              <a href="#discoveries">03 · Everyday discoveries</a>
+            </nav>
+            <section id="harbour" class="hk-chapter">
+              <p class="hk-eyebrow">01 / By the water</p>
+              <h2>Hong Kong after dark</h2>
+              <p>The red-lit Observation Wheel rises above the waterfront, with illuminated buildings behind it. This frame captures the bright, busy side of the harbour at night.</p>
+            </section>
+            <section id="campuses" class="hk-chapter">
+              <p class="hk-eyebrow">02 / University stops</p>
+              <h2>Two campuses, two keepsakes</h2>
+              <p>A campus photograph at PolyU and a jacket display at HKUST: two different ways to remember the university visits.</p>
+              <figure class="hk-photo">
+                <a href="../../images/hongkong/%E6%B8%AF%E7%90%86%E5%B7%A5.jpg" target="_blank" rel="noopener" aria-label="Open full photograph: Hong Kong Polytechnic University">
+                  <img src="../../images/hongkong/web/polyu.webp" alt="A photograph beside the I ♥ PolyU sign and the university's stone entrance wall." width="1600" height="720" loading="lazy" decoding="async" />
+                </a>
+                <figcaption><h3>Hong Kong Polytechnic University</h3><p>A photograph beside the I ♥ PolyU sign and the university's stone entrance wall.</p></figcaption>
+              </figure>
+              <figure class="hk-photo">
+                <a href="../../images/hongkong/HKUST%20Jason%E2%80%98s%20Jacket.jpg" target="_blank" rel="noopener" aria-label="Open full photograph: Jensen Huang's jacket and its story at HKUST">
+                  <img src="../../images/hongkong/web/hkust.webp" alt="Jensen Huang's signed black HKUST leather jacket in a red display case beside a plaque explaining its fundraising legacy." width="1600" height="720" loading="lazy" decoding="async" />
+                </a>
+                <figcaption class="hk-exhibit-story">
+                  <h3>Jensen Huang's jacket: a gift to the next generation</h3>
+                  <p>The plaque beside this jacket tells a story that reaches beyond the display case. Jensen Huang, NVIDIA's founder and CEO and an honorary Doctor of Engineering of HKUST, wore it during a fireside chat with Professor Harry Shum, Chairman of the University Council, in November 2024.</p>
+                  <blockquote>“From a proud alum to the future of AI and HKUST!”<cite>— Jensen Huang, handwritten on the jacket, November 23, 2024</cite></blockquote>
+                  <p>Huang contributed the jacket for fundraising at the HKUST Foundation Inaugural Gala Dinner in May 2025. At the dinner, alumnus Terry Tsang, founder and CEO of Madhead and an HKUST Council member, made a significant donation, which Huang matched. Together, they established two endowment funds to support and recognize exceptional young talents in the School of Engineering for their academic and research achievements.</p>
+                  <p>Huang and Tsang wanted the jacket to remain on campus as an enduring symbol of support for education and research. The exhibit connects a familiar piece of clothing with a larger hope: that future innovators will advance knowledge, break boundaries, and contribute to society.</p>
+                  <p class="hk-exhibit-source">Story based on the exhibit plaque, dated September 2025, and the jacket inscription visible in this photograph. Photographed on August 26, 2026. <a href="../../images/hongkong/HKUST%20Jason%E2%80%98s%20Jacket.jpg" target="_blank" rel="noopener">Read the plaque in the original photo ↗</a></p>
+                </figcaption>
+              </figure>
+            </section>
+            <section id="discoveries" class="hk-chapter">
+              <p class="hk-eyebrow">03 / Around the city</p>
+              <h2>Between the landmarks</h2>
+              <p>A familiar red sign, a bookstore display, and a meal on a tray. The smaller moments belong in the journal too.</p>
+              <figure class="hk-photo">
+                <a href="../../images/hongkong/%E5%BB%89%E6%94%BF%E5%85%AC%E7%BD%B2.jpg" target="_blank" rel="noopener" aria-label="Open full photograph: Outside ICAC">
+                  <img src="../../images/hongkong/web/icac.webp" alt="A street-side photograph beside the red Chinese lettering and ICAC sign." width="1600" height="720" loading="lazy" decoding="async" />
+                </a>
+                <figcaption><h3>Outside ICAC</h3><p>A street-side photograph beside the red Chinese lettering and ICAC sign.</p></figcaption>
+              </figure>
+              <figure class="hk-photo">
+                <a href="../../images/hongkong/%E6%97%BA%E8%A7%92MOKO%E4%B9%A6%E5%BA%97.jpg" target="_blank" rel="noopener" aria-label="Open full photograph: A bookstore at MOKO, Mong Kok">
+                  <img src="../../images/hongkong/web/bookstore.webp" alt="Books and illustrated displays inside a bookstore at MOKO." width="1600" height="720" loading="lazy" decoding="async" />
+                </a>
+                <figcaption><h3>A bookstore at MOKO, Mong Kok</h3><p>Books and illustrated displays inside a bookstore at MOKO.</p></figcaption>
+              </figure>
+              <figure class="hk-photo">
+                <a href="../../images/hongkong/sukiya.jpg" target="_blank" rel="noopener" aria-label="Open full photograph: A meal at Sukiya">
+                  <img src="../../images/hongkong/web/sukiya.webp" alt="A rice bowl, side dishes, and soup arranged together on a tray." width="1600" height="720" loading="lazy" decoding="async" />
+                </a>
+                <figcaption><h3>A meal at Sukiya</h3><p>A rice bowl, side dishes, and soup arranged together on a tray.</p></figcaption>
+              </figure>
+            </section>
+            <footer class="hk-footer">
+              <p>Hong Kong · August 23–29 · Photographs by Shengting Liu</p>
+              <a class="city-detail-back" href="../visit.html">← Back to journeys</a>
+            </footer>
           </article>
         </section>
       </div>
     </main>
-    <script>
-      (() => {
-        const key = "city-language";
-        const button = document.querySelector(".language-toggle");
-        const applyLanguage = (language) => {
-          document.body.classList.toggle("city-language-zh", language === "zh");
-          document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
-          button.setAttribute("aria-label", language === "zh" ? "Switch to English" : "切换到中文");
-        };
-        applyLanguage(sessionStorage.getItem(key) || "en");
-        button.addEventListener("click", () => {
-          const language = document.body.classList.contains("city-language-zh") ? "en" : "zh";
-          sessionStorage.setItem(key, language);
-          applyLanguage(language);
-        });
-      })();
-    </script>
   </body>
 </html>
