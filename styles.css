@@ -375,7 +375,7 @@ h2 {
   list-style: none;
 }
 
-.news-list li {
+.news-list > li {
   display: grid;
   grid-template-columns: 70px 1fr;
   gap: 12px;
@@ -385,6 +385,15 @@ h2 {
 .news-list time {
   color: var(--blue-dark);
   font-weight: 700;
+}
+
+.news-events {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .timeline-list li {
@@ -1016,7 +1025,7 @@ body.city-language-zh .lang-zh {
     font-size: 0.9rem;
   }
 
-  .news-list li {
+  .news-list > li {
     grid-template-columns: 1fr;
     gap: 2px;
   }
