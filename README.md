@@ -1,12 +1,12 @@
 # Personal Homepage
 
-This repository contains the personal homepage of Shengting Liu, an undergraduate student majoring in Automation at the University of Science and Technology of China (USTC). The site presents academic interests, selected projects, and personal notes in a lightweight static website.
+This is the personal homepage of Shengting Liu, an undergraduate studying Automation at the University of Science and Technology of China (USTC). It includes research projects, education, anime notes, and travel photos.
 
 ## Focus Areas
 
-- Embodied AI and physical robot workflows
+- Embodied AI and world action models
 - Reinforcement learning and few-shot learning
-- LLM applications, retrieval, and RAG systems
+- Retrieval and RAG-based question answering
 - Robotic data collection and simulation with MuJoCo
 
 ## Website Content
