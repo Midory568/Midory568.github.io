@@ -19,6 +19,8 @@ This is the personal homepage of Shengting Liu, an undergraduate studying Automa
 
 - `index.html` — the main profile page
 - `pages/` — Anime, Visit, city, and character detail pages
+- `components/sidebar.html` — shared profile sidebar used on every page
+- `scripts/sidebar.js` — loads the shared sidebar and resolves its image path
 - `images/` — profile, anime, and travel images
 - `styles.css` — shared responsive styles for all pages
 
