@@ -349,6 +349,35 @@ h2 {
   line-height: 1.72;
 }
 
+.about-verse {
+  margin: 0 0 22px;
+  padding: 20px 24px;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  background: rgba(255, 253, 248, 0.72);
+  color: var(--foreground);
+}
+
+.about-verse p {
+  margin: 0;
+  color: var(--foreground);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.24rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.about-verse cite {
+  display: block;
+  margin-top: 12px;
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 .skill-row {
   display: flex;
   flex-wrap: wrap;
